@@ -1,6 +1,6 @@
 <main>
   <ul>
-    <li *ngFor='let month of months'>
+    <li *ngFor='let month of months' (click)='navigateToList(month.key)'>
       <mat-card class='card'>
         <mat-card-content>
           <p>{{ month.name }}</p>
@@ -9,10 +9,10 @@
     </li>
   </ul>
 
-  <button>
+  <a routerLink='/register'>
     <i class="material-icons">
       add
     </i>
     Nova Conta
-  </button>
+  </a>
 </main>

@@ -37,7 +37,7 @@ p {
   color: #F5F5F5;
 }
 
-button {
+a {
   width: 25%;
   height: 50px;
   margin-left: 20px;
@@ -48,7 +48,7 @@ button {
   color: #fff;
   font-size: 16px;
   border-radius: 6px;
-  font-weight: bold;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,10 +56,10 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+a:hover {
   opacity: 0.7;
 }
 
-button i {
+a i {
   margin-right: 7px;
 }

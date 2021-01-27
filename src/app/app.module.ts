@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card';
 import { InitalComponent } from './pages/inital/inital.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegisterComponent } from './pages/register/register.component';
+import { ListComponent } from './pages/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InitalComponent
+    InitalComponent,
+    RegisterComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
