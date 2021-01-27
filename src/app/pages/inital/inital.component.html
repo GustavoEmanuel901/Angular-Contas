@@ -1,0 +1,18 @@
+<main>
+  <ul>
+    <li *ngFor='let month of months'>
+      <mat-card class='card'>
+        <mat-card-content>
+          <p>{{ month.name }}</p>
+        </mat-card-content>
+      </mat-card>
+    </li>
+  </ul>
+
+  <button>
+    <i class="material-icons">
+      add
+    </i>
+    Nova Conta
+  </button>
+</main>
