@@ -1,7 +1,7 @@
 export interface Account {
-  id: string;
+  id?: string;
   title: string;
-  value: string;
+  value: string | number;
   pay_day: number;
   payment_month: string;
   year: number;

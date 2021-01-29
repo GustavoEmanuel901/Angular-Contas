@@ -1,1 +1,37 @@
-<p>register works!</p>
+<div class='container'>
+  <h1>Registre uma nova conta</h1>
+
+  <form>
+    <div class="input-block">
+      <mat-form-field class='item'>
+        <input matInput placeholder="Titulo" [(ngModel)]="formData.title" name='title'/>
+      </mat-form-field>
+
+      <mat-form-field class='item'>
+        <input matInput placeholder="Valor" [(ngModel)]="formData.value" name='value'/>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field>
+      <mat-label>Data de Pagamento</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="formData.date" name='date'>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <div class="switch">
+      <mat-slide-toggle [(ngModel)]="formData.paid" name='paid'>Pago?</mat-slide-toggle>
+    </div>
+
+    <div class="buttons">
+      <a class='button'>
+        <i class="material-icons">
+          arrow_left
+        </i>
+        Voltar
+      </a>
+      <button class='button' (click)='createAccount()'>Cadastrar</button>
+    </div>
+  </form>
+
+</div>
